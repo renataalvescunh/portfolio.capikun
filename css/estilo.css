@@ -1,0 +1,95 @@
+element.style {
+    max-width: none;
+    max-height: 94vh;
+}
+.sidebar-show {
+    display: block;
+    transition: all 505ms cubic-bezier(.19,1,.22,1);
+}
+.dss-flyout-menu--animate {
+    animation-duration: .2s;
+    animation-fill-mode: backwards;
+    animation-name: dss-flyout-menu-slide-in-down;
+    animation-timing-function: cubic-bezier(.6,0,.2,1);
+}
+.dss-flyout-menu--border {
+    border: 1px solid #ccc;
+}
+.dss-flyout-menu {
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-family: SantanderMicroText, sans-serif;
+    font-size: 16px;
+    height: auto;
+    list-style: none;
+    max-height: 260px;
+    max-width: 292px;
+    overflow-x: auto;
+    width: 100%;
+    z-index: 1000;
+}
+.dss-elevation-1, .dss-elevation-2 {
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px -2px #2226;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+* {
+    box-sizing: inherit;
+    pointer-events: inherit;
+    outline: 0;
+}
+body {
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: -0.02em;
+    line-height: 1.8;
+    margin: 0;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    font-family: "SantanderHeadlineRegular", sans-serif;
+}
+body {
+    margin: 0;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+}
+html.cro-new-home {
+    font-size: 16px !important;
+}
+html {
+    font-size: 10px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
