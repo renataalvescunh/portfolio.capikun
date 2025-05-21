@@ -6,47 +6,52 @@
     <title> CAPIKUN </title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <script defer src="scripts.js"></script>
 </head>
 <body>
     <div>
-<!-- header.html -->
-<header>
-    <!-- Logo à esquerda -->
-    <div>
-        <a href="index.html">
-            <img src="assets/logo-svg.svg" alt="Logo" class="logo">
-        </a>
+        <!-- header.html -->
+        <header>
+            <!-- Logo à esquerda -->
+            <div>
+                <a href="index.html">
+                    <img src="assets/logo-svg.svg" alt="Logo" class="logo">
+                </a>
+            </div>
+            <!-- Menu de navegação à direita -->
+            <nav>
+                <ul class="nav-list">
+                    <li class="dropdown nav-item">
+                        <span class="nav-icon"><img src="assets/capikun-estrela-roxo.png" alt=""></span>
+                        <a class="dropbtn"> Trabalhos </a>
+                        <div class="dropdown-content">
+                            <a href="#"> Capas de livro </a>
+                            <a href="#"> Diagramação </a>
+                            <a href="maracador.html"> Marcador de página </a>
+                            <a href="#"> Poster/banner </a>
+                            <a href="#"> Card de personagem </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-icon"><img src="assets/capikun-estrela-lilas.png" alt=""></span>
+                        <a href="#sobre" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-icon"><img src="assets/capikun-estrela-claro.png" alt=""></span>
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </div>
-    <!-- Menu de navegação à direita -->
-    <nav>
-        <ul class="nav-list">
-<li class="dropdown nav-item">
-    <span class="nav-icon"><img src="assets/capikun-estrela-roxo.png" alt=""></span>
-    <a class="dropbtn"> Trabalhos </a>
-    <div class="dropdown-content">
-        <a href="#"> Capas de livro </a>
-        <a href="#"> Ilustrações </a>
-        <a href="#"> Motion design </a>
-        <a href="#"> Estampas </a>
-        <a href="#"> Outros </a>
-    </div>
-</li>
-            <li class="nav-item">
-                <span class="nav-icon"><img src="assets/capikun-estrela-lilas.png" alt=""></span>
-                <a href="#portfolio" class="nav-link">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <span class="nav-icon"><img src="assets/capikun-estrela-claro.png" alt=""></span>
-                <a href="#contato" class="nav-link">Contato</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+        <!-- fim da header -->
 
-    </div>
-    <section> 
+    <section class="principal">
         <div class="wrapper">
             <div class="items">
                 <div class="item" tabindex="0" style="background-image: url(./assets/logo1.png)"></div>
@@ -63,6 +68,45 @@
                 <div class="item" tabindex="0" style="background-image: url(./assets/logo5.png)"></div>
             </div>
         </div>
+        <h1 class="text-center">
+            Serviços editoriais e design para livros e publicações
+        </h1>
     </section>
+
+    <section id="sobre">
+        <div class="sobre">
+            <img src="assets/Group 7 (2).svg" alt="" class="sobre-img nao-selecionavel">
+            </a>
+            <p>
+                Oferecemos serviços de design editorial, incluindo diagramação, criação de capas e materiais gráficos,
+                dando ênfase em qualidade e preços acessíveis para escritores independentes. Por favor, verifique nossos
+                trabalhos na página portfólio e caso se interesse, entre em contato para discutir seu projeto. <br> <br>
+
+            <p id="latim"> Ars longa, vita brevis.</p>
+            </p>
+        </div>
+    </section>
+    <section id="contato">
+        <h2> Entre em contato </h2>
+        <div class="redes-sociais">
+            <a href="mailto:g.capikun@gmail.com" target="_blank" title="Envie um email para nós">
+                <i class="ph ph-envelope-simple-open" style="color: hotpink"></i>
+            </a> <a href="https://www.instagram.com/g.capikun/" target="_blank" title="Verifique nosso Instagram">
+                <i class="ph ph-instagram-logo" style="color: hotpink"></i>
+            </a> <a href="https://www.behance.net/capikun" target="_blank" title="Veja nosso portfólio">
+                <i class="ph ph-behance-logo" style="color: #ff69b4"></i>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CAPIKUN. Todos os direitos reservados.</p>
+            <p>
+                <a href="mailto:g.capikun@gmail.com" target="_blank"> Email </a>
+            </p>
+            <p>
+                <a href="https://www.instagram.com/g.capikun/" target="_blank"> Instagram </a>
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
