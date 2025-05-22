@@ -3,54 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CAPIKUN </title>
+    <title> ✦ CAPIKUN ✦</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <script defer src="js/include.js"></script>
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-    <script defer src="scripts.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
 <body>
-    <div>
-        <!-- header.html -->
-        <header>
-            <!-- Logo à esquerda -->
-            <div>
-                <a href="index.html">
-                    <img src="assets/logo-svg.svg" alt="Logo" class="logo">
-                </a>
-            </div>
-            <!-- Menu de navegação à direita -->
-            <nav>
-                <ul class="nav-list">
-                    <li class="dropdown nav-item">
-                        <span class="nav-icon"><img src="assets/capikun-estrela-roxo.png" alt=""></span>
-                        <a class="dropbtn"> Trabalhos </a>
-                        <div class="dropdown-content">
-                            <a href="#"> Capas de livro </a>
-                            <a href="#"> Diagramação </a>
-                            <a href="maracador.html"> Marcador de página </a>
-                            <a href="#"> Poster/banner </a>
-                            <a href="#"> Card de personagem </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <span class="nav-icon"><img src="assets/capikun-estrela-lilas.png" alt=""></span>
-                        <a href="#sobre" class="nav-link">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <span class="nav-icon"><img src="assets/capikun-estrela-claro.png" alt=""></span>
-                        <a href="#contato" class="nav-link">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-        <!-- fim da header -->
-
+        <header id="header"></header>
     <section class="principal">
         <div class="wrapper">
             <div class="items">
@@ -69,10 +32,11 @@
             </div>
         </div>
         <h1 class="text-center">
-            Serviços editoriais e design para livros e publicações
+            Portfólio | Serviços de design editoriais para livros e publicações
         </h1>
+        <a href="#sobre" class="anchor-down" aria-label="Ir para o rodapé">
+            <i class="ph ph-arrow-down"></i></a>
     </section>
-
     <section id="sobre">
         <div class="sobre">
             <img src="assets/Group 7 (2).svg" alt="" class="sobre-img nao-selecionavel">
@@ -85,6 +49,8 @@
             <p id="latim"> Ars longa, vita brevis.</p>
             </p>
         </div>
+        <a href="#contato" class="anchor-down" aria-label="Ir para o rodapé">
+            <i class="ph ph-arrow-down"></i></a>
     </section>
     <section id="contato">
         <h2> Entre em contato </h2>
@@ -93,20 +59,11 @@
                 <i class="ph ph-envelope-simple-open" style="color: hotpink"></i>
             </a> <a href="https://www.instagram.com/g.capikun/" target="_blank" title="Verifique nosso Instagram">
                 <i class="ph ph-instagram-logo" style="color: hotpink"></i>
-            </a> <a href="https://www.behance.net/capikun" target="_blank" title="Veja nosso portfólio">
+            </a> 
+            <a href="https://www.behance.net/capikun" target="_blank" title="Veja nosso portfólio">
                 <i class="ph ph-behance-logo" style="color: #ff69b4"></i>
+                </a>
     </section>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 CAPIKUN. Todos os direitos reservados.</p>
-            <p>
-                <a href="mailto:g.capikun@gmail.com" target="_blank"> Email </a>
-            </p>
-            <p>
-                <a href="https://www.instagram.com/g.capikun/" target="_blank"> Instagram </a>
-            </p>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
 </body>
-
 </html>
