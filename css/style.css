@@ -445,9 +445,9 @@ footer .ph:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10em;
-    height: 100vh;
+    height: 85vh;
     background-image: url(/assets/TRABALHOS.png);
+    background-size: cover;
 }
 
 #secao-marcador h2 {
@@ -500,24 +500,19 @@ footer .ph:hover {
 /* GRID DE MARCADORES */
 
 #grid-marcador {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5em;
     margin: 0 auto;
-    padding: 2em 0;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 1200px;
+    padding-top: 3em;
     min-height: 60vh;
 }
 
 .marcadores-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4em;
+    gap: 0.1em;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .marcador-card {
@@ -541,19 +536,15 @@ footer .ph:hover {
     transition: transform 0.4s;
 }
 
-.marcador-card:hover img {
-    transform: scale(1.4);
-}
-
 
 .marcador-card:hover::before {
     content: '';
     position: absolute;
-    top: 0; left: -75%;
-    width: 32%;
-    height: 100%;
+    top: 0; left: -88%;
+    width: 22%;
+    height: 120%;
     background: linear-gradient(120deg, rgba(255,255,255,0.13) 0%, rgba(255, 255, 255, 0.56) 60%, rgba(255,255,255,0.13) 100%);
-    transform: skewX(-25deg);
+    transform: skewX(-20deg);
     pointer-events: none;
     animation: shine 1s forwards;
     border-radius: 12px;
@@ -586,3 +577,70 @@ footer .ph:hover {
 
 
 
+/* Seção de CAPA DE LIVRO */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.div1 {
+    grid-row: span 4 / span 4;
+}
+
+.div2 {
+    grid-row: span 2 / span 2;
+}
+
+.div3 {
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+
+.div4 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div5 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.div6 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div7 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.div8 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 1;
+}
+
+.div9 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
+
+.div10 {
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.div11 {
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
