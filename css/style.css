@@ -445,7 +445,7 @@ footer .ph:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 85vh;
+    height: 100vh;
     background-image: url(/assets/TRABALHOS.png);
     background-size: cover;
 }
@@ -463,38 +463,53 @@ footer .ph:hover {
 
 #secao-marcador p {
     font-size: 0.9rem;
-    color: #fff;
-    opacity: 0.8;
+    color: #e2e2e2;
     text-align: center;
     padding: 30px;
-    margin-left: 50vh;
-    width: 80vh;
+    margin-left: 40vh;
 }
 
-.text-comum  {
-    font-size: 1rem;
-    text-align: center;
+#secao-marcador a {
+    padding: 0.1em 0.2em;
+    background-color: var(--main-color);
     color: #fff;
-    opacity: 0.8;
-    text-align: center;
-    padding: 15px;
-    margin-left: 200px;
-    margin-right: 200px;
-    font-weight: 400;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.9rem;
 }
+#secao-marcador a:hover {
+    background-color: var(--secondary-color);
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: var(--pair-color);}
 
-.programas-usados {
+
+.detalhes-item {
     display: flex;
     justify-content: center;
+    font-size: 0.8rem;
     align-items: center;
     gap: 1em;
-    color: #fff;
+    color: #e5e5e5;
     margin-left: 15vh;
 }
 
-.programas-usados i {
-    font-size: 1.5rem;
-    transition: color 0.3s;  
+.detalhes-item i {
+    font-size: 1rem;
+}
+
+.detalhes-itens a {
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.detalhes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30vh;
+    flex-direction: column;
+    padding: 2em 0;
+    gap: 1.5em;
 }
 
 /* GRID DE MARCADORES */
@@ -579,68 +594,104 @@ footer .ph:hover {
 
 /* Seção de CAPA DE LIVRO */
 
+.text-comum {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    opacity: 0.8;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-weight: 400;
+}
+
+#capas-de-livros {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    background-size: cover;
+}
+
+#capas-de-livros {
+    padding: 4rem 2rem;
+}
+
+#capas-de-livros h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+
 .parent {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    justify-items: center;
 }
 
-.div1 {
-    grid-row: span 4 / span 4;
+.parent>div {
+    aspect-ratio: 2 / 3;
+    /* Mantém proporção de capa de livro */
+    background-color: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    width: 100%;
 }
 
-.div2 {
-    grid-row: span 2 / span 2;
+.parent>div:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-.div3 {
-    grid-column-start: 1;
-    grid-row-start: 5;
+.parent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.div4 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 2;
-    grid-row-start: 3;
+/* SEÇÃO DIAGRAMAÇÃO */
+
+.secao-diagramacao {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(/assets/TRABALHOS\ \(3\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container-diagramacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    color: #fff;
 }
 
-.div5 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 1;
+.container-diagramacao h1 {
+    font-size: 2.7rem;
+    font-family: 'Magic Sparkle', sans-serif;
+    color: #fff;
+    opacity: 0.8;
+    margin-top: 1em;
+    margin-left: 30vh;
+    text-align: center;
+    padding: 0;
+    font-weight: 400;
 }
 
-.div6 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 3;
-    grid-row-start: 3;
-}
-
-.div7 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 4;
-    grid-row-start: 1;
-}
-
-.div8 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 1;
-}
-
-.div9 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 5;
-    grid-row-start: 3;
-}
-
-.div10 {
-    grid-column-start: 4;
-    grid-row-start: 4;
-}
-
-.div11 {
-    grid-column-start: 4;
-    grid-row-start: 5;
+.container-diagramacao p {
+    font-size: 0.9rem;
+    color: #e2e2e2;
+    text-align: center;
+    width: 100vh;
+    margin-left: 40vh;
 }
