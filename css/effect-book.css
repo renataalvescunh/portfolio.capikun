@@ -93,20 +93,3 @@
     transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
 }
 
-
-.items-book .item:active, .items-book .item:focus {
-  width: 28vw;
-  filter: inherit;
-  z-index: 100;
-  transform: translateZ(calc(var(--index) * 10));
-    margin: 0 .45vw;
-    
-}
-.item-book.active-book {
-    width: 14vw;
-    height: 50vh;
-    filter: inherit;
-    z-index: 100;
-    transform: translateZ(calc(var(--index) * 10)) scale(1.05);
-    margin: 0 .45vw;
-}
